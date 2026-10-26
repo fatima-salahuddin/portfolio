@@ -1,32 +1,25 @@
-import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
 import { resumeData } from "@/app/data/resume";
 
 export const Footer = () => {
+    const { profile } = resumeData;
+
     return (
-        <footer className="w-full border-t border-border bg-background py-6 md:py-0">
-            <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row max-w-screen-xl px-4">
-                <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-                    © {new Date().getFullYear()} {resumeData.profile.name}. All rights reserved.
-                </p>
-                <div className="flex items-center gap-4">
-                    <Link
-                        href={resumeData.profile.linkedin}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-muted-foreground hover:text-foreground transition-colors"
-                    >
-                        <Linkedin className="h-5 w-5" />
-                        <span className="sr-only">LinkedIn</span>
-                    </Link>
-                    <Link
-                        href={`mailto:${resumeData.profile.email}`}
-                        className="text-muted-foreground hover:text-foreground transition-colors"
-                    >
-                        <Mail className="h-5 w-5" />
-                        <span className="sr-only">Email</span>
-                    </Link>
+        <footer className="site-footer">
+            <div className="wrap">
+                <div>
+                    <p style={{ margin: 0, color: "var(--ink)" }}>{profile.name}</p>
+                    <p style={{ margin: "4px 0 0" }}>
+                        {profile.location} · <a className="link" href={`mailto:${profile.email}`}>{profile.email}</a>
+                    </p>
+                    <p className="meta" style={{ margin: "16px 0 0" }}>
+                        No cookies, no analytics, no tracking. Set in Source Serif and IBM Plex.
+                    </p>
                 </div>
+                <ul aria-label="Elsewhere">
+                    <li><a className="link" href={profile.github}>GitHub</a></li>
+                    <li><a className="link" href={profile.linkedin}>LinkedIn</a></li>
+                    <li><a className="link" href={profile.resume}>Resume (PDF)</a></li>
+                </ul>
             </div>
         </footer>
     );
