@@ -1,7 +1,7 @@
 <h1>Portfolio</h1>
 
 <p>
-  <a href="https://portfolio-eight-silk-85.vercel.app"><img src="https://img.shields.io/badge/live-portfolio--eight--silk--85.vercel.app-0F172A?style=flat-square&logo=vercel&logoColor=white" alt="Live site"></a>
+  <a href="https://portfolio-fatima-salahuddin.vercel.app"><img src="https://img.shields.io/badge/live-portfolio--fatima--salahuddin.vercel.app-0F172A?style=flat-square&logo=vercel&logoColor=white" alt="Live site"></a>
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
@@ -10,7 +10,7 @@
 
 My personal site: projects with case-study pages, skills, resume and contact.
 
-**Live at [portfolio-eight-silk-85.vercel.app](https://portfolio-eight-silk-85.vercel.app)**
+**Live at [portfolio-fatima-salahuddin.vercel.app](https://portfolio-fatima-salahuddin.vercel.app)**
 
 ## Pages
 
